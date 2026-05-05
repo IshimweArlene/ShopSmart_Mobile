@@ -4,7 +4,7 @@ import {  useSafeAreaInsets } from "react-native-safe-area-context";
 
 const { width } = Dimensions.get('window');
 
-export default function CreatedSuccess() {
+export default function ForgotPassword() {
     const router = useRouter();
     const insets = useSafeAreaInsets();
     return (
