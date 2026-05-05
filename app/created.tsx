@@ -57,15 +57,28 @@ const styles = StyleSheet.create({
   topSpacer: {
     flex: 1,
   },
+  bottomSpacer: {
+    flex: 1,
+  },
   logoContainer: {
     alignItems: 'center',
-    marginTop: 0,
+    marginBottom: 50,
     zIndex: 1,
   }, 
   logoImage: {
     width: 100,
     height: 100,
-    top: -70,
+    marginTop: 30,
+  },
+  formContainer: {
+    // This height matches the login screen's form height so the logo aligns perfectly in the flex layout
+    height: 251,
+    alignItems: 'center',
+    paddingTop: 30,
+  },
+  bottomContainer: {
+    alignItems: 'center',
+    paddingBottom: 30,
   },
   loginButton:{
     width: width * 0.65,
@@ -75,11 +88,5 @@ const styles = StyleSheet.create({
     borderColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 40,
-    marginBottom: 20,
-    color: 'white',
-    fontSize: 14,
-    fontWeight: 'bold',
-    alignSelf: 'center',
   }
 })
