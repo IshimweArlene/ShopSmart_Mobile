@@ -79,7 +79,7 @@ export default function LoginScreen() {
         <View style={styles.bottomSpacer} />
 
         {/* Sign Up Button */}
-        <TouchableOpacity style={styles.signUpButton}>
+        <TouchableOpacity style={styles.signUpButton} onPress={() => router.push('/signup')}>
           <Text style={styles.signUpText}>SIGN UP</Text>
         </TouchableOpacity>
       </View>
@@ -112,10 +112,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 50,
     zIndex: 1,
-  },
+  }, 
   logoImage: {
     width: 100,
     height: 100,
+    marginTop: 30,
   },
   formContainer: {
     paddingHorizontal: 50,
