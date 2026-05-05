@@ -4,7 +4,7 @@ import {  useSafeAreaInsets } from "react-native-safe-area-context";
 
 const { width } = Dimensions.get('window');
 
-export default function ForgotPassword() {
+export default function EmailConfirmation() {
     const router = useRouter();
     const insets = useSafeAreaInsets();
     return (
@@ -21,15 +21,21 @@ export default function ForgotPassword() {
                 </View>
 
                 <View style={styles.formContainer}>
-                    <Text style={{fontWeight: 'bold', color: 'white', fontSize: 16, textAlign: 'center'}}>Account Created Successfully</Text>
-                    <Text style={{color: 'white', fontSize: 16, textAlign: 'center', fontWeight: 'regular', marginTop: 10}}>Congratulations you are now part of our family</Text>
+                    <Text style={{fontWeight: '900', color: 'white', fontSize: 16, textAlign: 'center'}}>Email Sent!</Text>
+                    <Text style={{color: 'white', fontSize: 16, textAlign: 'center', fontWeight: 'regular', marginTop: 10, paddingHorizontal: 40, paddingTop: 4}}>If you can't find it in your inbox check  spam, junk, and more.</Text>
                 </View>
 
                 <View style={styles.bottomSpacer} />
 
                 <View style={styles.bottomContainer}>
-                    <TouchableOpacity style={styles.loginButton} onPress={() => router.replace('/')}>
-                        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}>LOGIN</Text>
+                    <Text style={{color: 'white', fontSize: 16, textAlign: 'center', fontWeight: 'regular', marginTop: 10, paddingHorizontal: 40, paddingTop: 4}}>Did Not Work? Doubts?</Text>
+                    <TouchableOpacity>
+                        <Text style={{color: '#539fd4ff', marginTop: 10, fontWeight: 'bold', fontSize: 16 }}>Click here</Text>
+                    </TouchableOpacity>
+                </View>
+                <View>
+                    <TouchableOpacity onPress={() => router.replace('/')}>
+                        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 18, alignSelf: 'center', paddingBottom: 20, top: -12}}>LOGIN</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -64,7 +70,7 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    marginBottom: 50,
+    marginBottom: 15,
     zIndex: 1,
   }, 
   logoImage: {
@@ -76,22 +82,12 @@ const styles = StyleSheet.create({
     // This height matches the login screen's form height so the logo aligns perfectly in the flex layout
     height: 251,
     alignItems: 'center',
-    paddingTop: 90
+    paddingTop: 70
   },
   bottomContainer: {
     alignItems: 'center',
-    paddingBottom: 10,
-    top: -95
+    top: -90
     
   },
-  loginButton:{
-    width: width * 0.65,
-    height: 48,
-    borderRadius: 24,
-    borderWidth: 3,
-    borderColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontWeight: 'bold',
-  }
+  
 })
