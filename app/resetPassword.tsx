@@ -10,12 +10,6 @@ export default function ResetPassword() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = () => {
-    // Navigate to the main tabs after "login"
-    router.replace('/(tabs)');
-  };
 
   return (
     <View style={styles.container}>
@@ -43,22 +37,16 @@ export default function ResetPassword() {
             <Feather name="user" size={20} color="#fff" style={styles.inputIcon} />
             <TextInput
               style={styles.input}
-              placeholder="USERNAME"
+              placeholder="USERNAME or EMAIL"
               placeholderTextColor="rgba(255, 255, 255, 0.6)"
               value={username}
               onChangeText={setUsername}
-              autoCapitalize="none"
             />
           </View>
 
           {/* Login Button */}
-          <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-            <Text style={styles.loginButtonText}>LOGIN</Text>
-          </TouchableOpacity>
-
-          {/* Forgot Password */}
-          <TouchableOpacity onPress={() => router.push('/emailConfirmation')}>
-            <Text style={styles.forgotPasswordText}>Forgot your password ?</Text>
+          <TouchableOpacity style={styles.loginButton} onPress={() => router.push('/emailConfirmation')}>
+            <Text style={styles.loginButtonText}>SEND</Text>
           </TouchableOpacity>
         </View>
 
@@ -66,8 +54,8 @@ export default function ResetPassword() {
         <View style={styles.bottomSpacer} />
 
         {/* Sign Up Button */}
-        <TouchableOpacity style={styles.signUpButton} onPress={() => router.push('/signup')}>
-          <Text style={styles.signUpText}>SIGN UP</Text>
+        <TouchableOpacity style={styles.signUpButton} onPress={() => router.push('/')}>
+          <Text style={styles.signUpText}>LOGIN</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -131,7 +119,7 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
   },
   loginButton: {
-    width: '100%',
+    width: '70%',
     height: 48,
     borderRadius: 24,
     borderWidth: 2,
