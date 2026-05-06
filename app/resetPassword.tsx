@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const { width } = Dimensions.get('window');
 
-export default function LoginScreen() {
+export default function ResetPassword() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const [username, setUsername] = useState('');
@@ -51,26 +51,13 @@ export default function LoginScreen() {
             />
           </View>
 
-          {/* Password Input */}
-          <View style={styles.inputWrapper}>
-            <Feather name="key" size={20} color="#fff" style={styles.inputIcon} />
-            <TextInput
-              style={styles.input}
-              placeholder="PASSWORD"
-              placeholderTextColor="rgba(255, 255, 255, 0.6)"
-              value={password}
-              onChangeText={setPassword}
-              secureTextEntry
-            />
-          </View>
-
           {/* Login Button */}
           <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
             <Text style={styles.loginButtonText}>LOGIN</Text>
           </TouchableOpacity>
 
           {/* Forgot Password */}
-          <TouchableOpacity onPress={() => router.push('/resetPassword')}>
+          <TouchableOpacity onPress={() => router.push('/emailConfirmation')}>
             <Text style={styles.forgotPasswordText}>Forgot your password ?</Text>
           </TouchableOpacity>
         </View>

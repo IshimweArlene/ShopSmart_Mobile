@@ -5,38 +5,38 @@ import {  useSafeAreaInsets } from "react-native-safe-area-context";
 const { width } = Dimensions.get('window');
 
 export default function CreatedSuccess() {
-    const router = useRouter();
-    const insets = useSafeAreaInsets();
-    return (
-        <View style= {styles.container}>
-            <View style ={styles.topBackground}/>
-            <View style={[styles.content, {paddingTop: insets.top, paddingBottom: insets.bottom}]}>
-                <View style = {styles.topSpacer} />
-                <View style = {styles.logoContainer}>
-                    <Image 
-                        source={require('../assets/images/logo.png')}
-                        style={styles.logoImage}
-                        resizeMode="contain"
-                    />
-                </View>
+  const router = useRouter();
+  const insets = useSafeAreaInsets();
+  return (
+      <View style= {styles.container}>
+        <View style ={styles.topBackground}/>
+        <View style={[styles.content, {paddingTop: insets.top, paddingBottom: insets.bottom}]}>
+          <View style = {styles.topSpacer} />
+          <View style = {styles.logoContainer}>
+              <Image 
+                  source={require('../assets/images/logo.png')}
+                  style={styles.logoImage}
+                  resizeMode="contain"
+              />
+          </View>
 
-                <View style={styles.formContainer}>
-                    <Text style={{fontWeight: 'bold', color: 'white', fontSize: 16, textAlign: 'center'}}>Account Created Successfully</Text>
-                    <Text style={{color: 'white', fontSize: 16, textAlign: 'center', fontWeight: 'regular', marginTop: 10}}>Congratulations you are now part of our family</Text>
-                </View>
+          <View style={styles.formContainer}>
+              <Text style={{fontWeight: 'bold', color: 'white', fontSize: 16, textAlign: 'center'}}>Account Created Successfully</Text>
+              <Text style={{color: 'white', fontSize: 16, textAlign: 'center', fontWeight: 'regular', marginTop: 10}}>Congratulations you are now part of our family</Text>
+          </View>
 
-                <View style={styles.bottomSpacer} />
+          <View style={styles.bottomSpacer} />
 
-                <View style={styles.bottomContainer}>
-                    <TouchableOpacity style={styles.loginButton} onPress={() => router.replace('/')}>
-                        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}>LOGIN</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
-
-            
+          <View style={styles.bottomContainer}>
+            <TouchableOpacity style={styles.loginButton} onPress={() => router.replace('/')}>
+                  <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}>LOGIN</Text>
+              </TouchableOpacity>
+          </View>
         </View>
-    )
+
+          
+      </View>
+  )
 }
 const styles = StyleSheet.create({
     container: {
