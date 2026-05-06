@@ -21,6 +21,7 @@ const MAPPING = {
   'person.fill': 'person',
   'gearshape.fill': 'settings',
   'questionmark.circle.fill': 'help',
+  'document.fill': 'article',
 } as IconMapping;
 
 /**
