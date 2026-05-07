@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a4212-0a7c-45c5-9ef3-69a2adb52502" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/android-icon-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/android-icon-foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/android-icon-monochrome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/partial-react-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/react-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/react-logo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/react-logo@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/splash-icon.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +15,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3DMWOX7wbutAKaTJBhcG98qJ84j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,16 +29,22 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/Project/green_Food_mobile",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "D:\\Project\\green_Food_mobile\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -66,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1778092394778</updated>
       <workItem from="1778092396343" duration="2029000" />
+      <workItem from="1778143738181" duration="866000" />
     </task>
     <servers />
   </component>
