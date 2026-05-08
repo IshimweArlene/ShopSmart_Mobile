@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, ScrollView, Text, TextInput, View, StyleSheet } from 'react-native';
-import { IconSymbol } from '@/components/ui/icon-symbol';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 const logo = {
   uri: 'https://reactnative.dev/img/tiny_logo.png',
@@ -10,13 +10,12 @@ const logo = {
 
 const App = () => (
   <View>
-    <View>
+    <View style={styles.searchContainer}>
       <TextInput
         placeholder='What do you want today'
-        style={styles.searchContainer}
         placeholderTextColor='#575861'
       />
-      <IconSymbol size={200} name='magnifyingglass' color='black' style= {{top: 100}} />
+      <Ionicons name='search' size={24} color='gray' />
     </View>
   </View>
 );
